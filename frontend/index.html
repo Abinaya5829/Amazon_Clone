@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+  <!-- Product section -->
+  <main class="container">
+    <h1>Products</h1>
+    <div class="products" id="product-list"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Amazon Clone — Built by You</p>
+  </footer>
+
+  <!-- Script to load navbar -->
+  <script>
+    fetch("components/navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- Your existing JS -->
+  <script src="script.js"></script>
+  <script src="home.js"></script>
+
+
+</body>
+</html>

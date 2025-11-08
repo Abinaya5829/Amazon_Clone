@@ -1,0 +1,11 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore environment and log files
+.env
+*.log
+
+# Ignore compiled folders
+__pycache__/
+dist/
+build/
